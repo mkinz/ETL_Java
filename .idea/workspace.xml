@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afb12047-8e23-4ab5-80d7-6da32c53df63" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/factories/ConcreteFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/IDataFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="afb12047-8e23-4ab5-80d7-6da32c53df63" name="Changes" comment="add factory class and concrete subclass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/ConcreteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/ConcreteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runners/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650460158760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add factory class and concrete subclass">
+      <created>1650470496707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650470496707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="add factory class and concrete subclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="add factory class and concrete subclass" />
   </component>
 </project>

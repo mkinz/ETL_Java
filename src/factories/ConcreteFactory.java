@@ -9,16 +9,16 @@ import loaders.ConcreteLoader;
 import loaders.ILoader;
 
 public class ConcreteFactory extends IDataFactory {
-    public IDBConnector get_source_db_object(){
+    public SourceDBConnector get_source_db_object(){
         return new SourceDBConnector();
     }
-    public IDBConnector get_target_db_object(){
+    public TargetDBConnector get_target_db_object(){
         return new TargetDBConnector();
     }
-    public IExtractor get_extractor_object(){
+    public ConcreteExtractor get_extractor_object(){
         return new ConcreteExtractor();
     }
-    public ILoader get_loader_object(){
+    public ConcreteLoader get_loader_object(){
         return new ConcreteLoader();
     }
 }
