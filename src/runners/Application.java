@@ -1,10 +1,15 @@
 package runners;
 
 import connectors.SourceDBConnector;
+import connectors.TargetDBConnector;
 import extractors.ConcreteExtractor;
 import factories.ConcreteFactoryA;
+import factories.Factories_map;
+import factories.IDataFactory;
+import loaders.ConcreteLoader;
 
 import java.time.LocalDate;
+import java.util.Map;
 import java.util.logging.Logger;
 
 public class Application {
@@ -18,30 +23,29 @@ public class Application {
         Logger logr = Logger.getLogger(Logger.class.getName());
         logr.info("Starting ExtractTransformFactory");
 
-//        LocalDate operation_timestamp = LocalDate.now();
-//
-//        SourceDBConnector source_conn_obj = new SourceDBConnector();
-//        source_conn = source_conn_obj.connect_to_db();
-//
-//        ConcreteExtractor data_extractor = new ConcreteExtractor();
-//        data_to_load = data_extractor.extract_data(source_conn, operation_timestamp);
-//
-//
-//        TargetDBConnector target_conn_obj = new TargetDBConnector();
-//        target_conn = target_conn_obj.connect_to_db();
-//
-//        ConcreteLoader data_loader = new ConcreteLoader();
-//        data_loader.load_data(target_conn, data_to_load, operation_timestamp);
+        Factories_map factories = new Factories_map();
+
+
 
         ConcreteFactoryA fac = new ConcreteFactoryA();
 
         SourceDBConnector source_conn_obj;
         source_conn_obj = fac.get_source_db_object();
-        source_conn_obj.connect_to_db();
+        source_conn = source_conn_obj.connect_to_db();
 
         ConcreteExtractor extractor_obj;
         extractor_obj = fac.get_extractor_object();
-        extractor_obj.extract_data(source_conn, operation_date);
+        String extracted_data = extractor_obj.extract_data(source_conn, operation_date);
+
+        TargetDBConnector target_conn_obj;
+        target_conn_obj = fac.get_target_db_object();
+        target_conn = target_conn_obj.connect_to_db();
+
+        ConcreteLoader loader_obj;
+        loader_obj = fac.get_loader_object();
+        loader_obj.load_data(target_conn, extracted_data, operation_date);
+
+
 
 
 

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afb12047-8e23-4ab5-80d7-6da32c53df63" name="Changes" comment="add more stuff">
-      <change afterPath="$PROJECT_DIR$/src/factories/ConcreteFactoryB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/factories_map.java" afterDir="false" />
+    <list default="true" id="afb12047-8e23-4ab5-80d7-6da32c53df63" name="Changes" comment="add factories_map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factories/ConcreteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/ConcreteFactoryA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/factories_map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/Factories_map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/runners/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +55,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Factories_map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="factories.Factories_map" />
+      <module name="ETL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="runners.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="runners.Application" />
       <extension name="coverage">
@@ -72,6 +83,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Factories_map" />
         <item itemvalue="Application.runners.Application" />
       </list>
     </recent_temporary>
@@ -106,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650504170137</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add factories_map">
+      <created>1650587994041</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650587994041</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +143,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="add factory class and concrete subclass" />
     <MESSAGE value="add more stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more stuff" />
+    <MESSAGE value="add factories_map" />
+    <option name="LAST_COMMIT_MESSAGE" value="add factories_map" />
   </component>
 </project>
