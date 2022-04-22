@@ -1,13 +1,9 @@
 package runners;
 
-import connectors.IDBConnector;
 import connectors.SourceDBConnector;
-import connectors.TargetDBConnector;
 import extractors.ConcreteExtractor;
-import factories.ConcreteFactory;
-import loaders.ConcreteLoader;
+import factories.ConcreteFactoryA;
 
-import javax.xml.transform.Source;
 import java.time.LocalDate;
 import java.util.logging.Logger;
 
@@ -37,7 +33,7 @@ public class Application {
 //        ConcreteLoader data_loader = new ConcreteLoader();
 //        data_loader.load_data(target_conn, data_to_load, operation_timestamp);
 
-        ConcreteFactory fac = new ConcreteFactory();
+        ConcreteFactoryA fac = new ConcreteFactoryA();
 
         SourceDBConnector source_conn_obj;
         source_conn_obj = fac.get_source_db_object();
@@ -52,4 +48,5 @@ public class Application {
 
 
     }
+
 }

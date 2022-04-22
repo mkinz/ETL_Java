@@ -1,14 +1,11 @@
 package factories;
 
-import connectors.IDBConnector;
 import connectors.SourceDBConnector;
 import connectors.TargetDBConnector;
 import extractors.ConcreteExtractor;
-import extractors.IExtractor;
 import loaders.ConcreteLoader;
-import loaders.ILoader;
 
-public class ConcreteFactory extends IDataFactory {
+public class ConcreteFactoryA extends IDataFactory {
     public SourceDBConnector get_source_db_object(){
         return new SourceDBConnector();
     }
